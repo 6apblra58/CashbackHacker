@@ -1,20 +1,19 @@
 package cashback;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class CashbackHackerTest {
+public class CashbackHackerTest {
 
     @Test
-    void shouldHackIfAmountIs900() {
+   public void shouldHackIfAmountIs900() {
 CashbackHacker cashback = new CashbackHacker();
 int actual = cashback.remain(900);
 int expected = 100;
 assertEquals(expected,actual);
     }
     @Test
-    void shouldHackIfAmountIs1000(){
+   public void shouldHackIfAmountIs1000(){
         CashbackHacker cashback = new CashbackHacker();
         int actual = cashback.remain(1000);
         int expected = 0;
@@ -22,7 +21,7 @@ assertEquals(expected,actual);
     }
 
     @Test
-    void shouldHackIfAmountIs1200(){
+   public void shouldHackIfAmountIs1200(){
         CashbackHacker cashback = new CashbackHacker();
         int actual = cashback.remain(1200);
         int expected = 800;
