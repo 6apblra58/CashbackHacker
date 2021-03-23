@@ -8,10 +8,10 @@ class CashbackHackerTest {
 
     @Test
     void shouldHackIfAmountIs900() {
-CashbackHacker cashback = new CashbackHacker();
-int actual = cashback.remain(900);
-int expected = 100;
-assertEquals(expected,actual);
+         CashbackHacker cashback = new CashbackHacker();
+         int actual = cashback.remain(900);
+         int expected = 100;
+         assertEquals(expected,actual);
     }
     @Test
     void shouldHackIfAmountIs1000(){
